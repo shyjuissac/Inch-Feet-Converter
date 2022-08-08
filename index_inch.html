@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html>
+
+
+<body>
+
+    
+    <h2>Inch, Feet Converter</h2>
+    inch
+    <input id="inch" value="12">
+    feet
+    <input id="feet" value="1">
+    
+    <script>
+    
+    const inch = document.getElementById("inch")
+    const feet = document.getElementById("feet")
+    
+    
+    
+    inch.addEventListener("input", function(){
+        
+        let ifwork = this.value / 12
+        
+         feet.value = ifwork
+       
+    })
+        feet.addEventListener("input", function(){
+         let fiwork = this.value * 12
+        
+         inch.value = fiwork
+        
+    })
+    
+    </script>
+
+
+</body>
+
+</html>
